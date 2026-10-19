@@ -131,11 +131,11 @@ li {
     margin: 0px 0px 24px 0px;
 }
 
-/* Styles each supply card inside the kit section. The dashed border and
-   khaki background make each card look like a separate tag in the manual. */
+/* Styles each supply card inside the kit section. The border and khaki
+   background make each card look like a separate tag in the manual. */
 .card {
     background-color: #E8E4D4;
-    border: 2px dashed #3B4A2A;
+    border: 2px solid #3B4A2A;
     padding: 16px;
     margin: 0px 0px 16px 0px;
 }
@@ -151,14 +151,18 @@ li {
 }
 
 /* Styles each image. max-width: 100% stops the image from growing wider than
-   its box, max-height keeps the tall image from taking over the section, and
-   width and height auto keep its original proportions. */
+   its box, height: auto keeps its original proportions, and the olive border
+   frames it. */
 img {
     max-width: 100%;
-    max-height: 400px;
-    width: auto;
     height: auto;
     border: 2px solid #3B4A2A;
+}
+
+/* Sets a smaller width for the tall zombie image so it does not take over the
+   safe zone section. */
+.tall-photo img {
+    width: 250px;
 }
 
 /* Styles the caption under each image. The smaller italic text reads as a
