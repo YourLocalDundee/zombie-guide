@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<!--
+    Name:       Joseph Medeiros
+    Date:       October 12, 2026
+    Assignment: W8 ICL - Zombie Outbreak
+    Filename:   index.html
+-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,38 +15,107 @@
 <body>
 <!--
     Where does your outbreak take place? In a city like springfield
-What is the title of your survival guide? Zombie Survival Guide
-What is your most important survival rule? Don't kill friends
-What three supplies would you bring, and why? non-ballistic weapon, knife, water/food
-Where is your safe zone, and why would it work? bunker that might lead undeground
-What question or choice will you leave for Pi Day visitors? anything they want to add
+    What is the title of your survival guide? Zombie Survival Guide
+    What is your most important survival rule? Don't kill friends
+    What three supplies would you bring, and why? non-ballistic weapon, knife, water/food
+    Where is your safe zone, and why would it work? bunker that might lead underground
+    What question or choice will you leave for Pi Day visitors? anything they want to add
 -->
 
     <header>
+        <nav id="site-nav">
+            <a href="index.html">Home</a>
+            <a href="#rules">Rules</a>
+            <a href="#kit">Survival Kit</a>
+            <a href="#safe-zone">Safe Zone</a>
+            <a href="#pi-day">Pi Day</a>
+        </nav>
         <h1>Ozarks Zombie Survival Guide</h1>
-        <p>Stay together. Stay alive.</p>
-        <p>This is for all survivors in Springfield Missouri. The outbreak has reached the ozarks and the city is no onger safe.</p>
-        <p>Read all the rules, follow all the rules, and don't forget them if you wan to stay alive.</p>
+        <p class="tagline">Stay quiet. Stay together. Stay alive.</p>
+        <p>This manual is issued to all survivors in Springfield, Missouri. The outbreak has reached the Ozarks, and the city is no longer safe. Read every section, follow the rules, and keep this guide with you at all times.</p>
     </header>
 
     <main>
-        <section>
+
+        <section class="content-box">
+
             <h2>You are in the Ozarks of Missouri. Springfield specifically</h2>
+
+            <figure class="photo">
+                <img src="images/zombie1.jpg" alt="A rotting zombie in a torn grey shirt lunging forward with both hands reaching out">
+                <figcaption>The infected have reached Springfield.</figcaption>
+            </figure>
+
         </section>
 
-        <section>
-            <h2>Survival rules</h2>
+        <section class="content-box" id="rules">
+
+            <h2>Survival Rules</h2>
             <ol>
-                <li>Do not kill friends!</li>
-                <li>Stay quiet!</li>
-                <li>Dont Travel ALONE!</li>
+                <li><strong>Do not kill friends.</strong> Your group is your strongest defense. Every survivor you lose is one less person watching your back.</li>
+                <li><strong>Stay quiet.</strong> Noise draws the infected. Move slowly, speak low, and never run unless you have to.</li>
+                <li><strong>Never travel alone.</strong> A partner can spot danger you miss and pull you out if you get cornered.</li>
             </ol>
+
         </section>
 
-        <section>
-            <h2></h2>
+        <section class="content-box" id="kit">
+
+            <h2>Survival Kit</h2>
+
+            <figure class="photo">
+                <img src="images/gear-zombie.jpg" alt="Survival gear laid out around a black backpack, including a medical kit, rope, a machete, a hatchet, food pouches, and a hammock">
+                <figcaption>Pack light and pack smart.</figcaption>
+            </figure>
+
+            <article class="card">
+                <h3>Non-Ballistic Weapon</h3>
+                <p>Gunfire carries for miles and pulls every zombie toward you. A non-ballistic weapon works quietly and never needs ammunition.</p>
+            </article>
+
+            <article class="card">
+                <h3>Knife</h3>
+                <p>A knife is a tool first and a weapon second. Use it to cut rope, open supplies, and defend yourself at close range.</p>
+            </article>
+
+            <article class="card">
+                <h3>Water &amp; Food</h3>
+                <p>Clean water and food keep you moving. Pack enough to last until you reach the safe zone.</p>
+            </article>
+
         </section>
+
+        <section class="content-box" id="safe-zone">
+
+            <h2>The Safe Zone: Bunker 417</h2>
+
+            <figure class="photo">
+                <img src="images/zombie2.png" alt="A thin zombie in ragged brown clothes shuffling forward barefoot">
+                <figcaption>What waits outside the bunker door.</figcaption>
+            </figure>
+
+            <p>Bunker 417 is a reinforced shelter below Springfield with one locked entrance and room for a small group. Thick walls block sound, so the infected cannot hear you inside. A tunnel at the back may lead deeper underground, giving survivors an escape route if the entrance is breached. Scouts will check the tunnel before anyone relies on it.</p>
+
+        </section>
+
+        <section class="content-box" id="pi-day">
+
+            <h2>Pi Day Visitor Challenge</h2>
+            <p>You can add one item to the survival kit. Which would you choose?</p>
+            <ul>
+                <li>Flashlight</li>
+                <li>First aid kit</li>
+                <li>Rope</li>
+                <li>Your own idea</li>
+            </ul>
+
+        </section>
+
     </main>
+
+    <footer id="site-footer">
+        <p>Joseph M.&nbsp;|&nbsp;Inspired by the CDC poster <a href="https://stacks.cdc.gov/view/cdc/12125">Don&rsquo;t Be a Zombie: Be Prepared</a></p>
+    </footer>
 
 </body>
 </html>

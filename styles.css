@@ -1,0 +1,188 @@
+/*
+    Name:       Joseph Medeiros
+    Date:       October 12, 2026
+    Assignment: W8 ICL - Zombie Outbreak
+    Filename:   styles.css
+*/
+
+/* ----- Browser reset (universal) ----- */
+
+/* Clears the default spacing the browser adds to every element so the page
+   starts from zero. */
+* {
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+}
+
+/* ----- Page defaults (element) ----- */
+
+/* Sets the khaki paper background, dark text and typewriter font for the
+   field manual look. max-width and auto side margins center the page, and
+   line-height spaces the lines out for easier reading. */
+body {
+    background-color: #E8E4D4;
+    color: #1E1E1E;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0px auto 0px auto;
+}
+
+/* ----- Header (element) ----- */
+
+/* Puts the title, tagline and intro on an olive band. Light text keeps it
+   readable on the dark background, and the bottom margin separates it from
+   the first section. */
+header {
+    background-color: #3B4A2A;
+    color: #F2EFE4;
+    padding: 24px;
+    margin: 0px 0px 24px 0px;
+}
+
+/* ----- Navigation (ID) ----- */
+
+/* Styles the navigation bar at the top of the header. The bottom margin is
+   the gap between the row of links and the page title underneath it. */
+#site-nav {
+    margin: 0px 0px 16px 0px;
+}
+
+/* Styles the links inside the navigation bar. Gold reads clearly on the olive
+   header, bold weight makes them stand out as links, and the right margin is
+   the gap between one link and the next. */
+#site-nav a {
+    color: #E0C36A;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0px 20px 0px 0px;
+}
+
+/* Underlines a navigation link while the pointer is over it, so there is a
+   visible signal that it can be clicked. */
+#site-nav a:hover {
+    text-decoration: underline;
+}
+
+/* ----- Headings and tagline (element and class) ----- */
+
+/* Styles the page title. The large size puts it at the top of the heading
+   order. */
+h1 {
+    font-size: 32px;
+    margin: 0px 0px 0px 0px;
+}
+
+/* Styles the tagline under the title. Italics set it apart from the title
+   and the intro. */
+.tagline {
+    font-size: 20px;
+    font-style: italic;
+    margin: 8px 0px 16px 0px;
+}
+
+/* Styles the section headings in olive with a rule under them, like the
+   chapter headings in a printed manual. */
+h2 {
+    color: #3B4A2A;
+    font-size: 24px;
+    border-bottom: 2px solid #3B4A2A;
+    margin: 0px 0px 16px 0px;
+}
+
+/* Styles the heading on each supply card. It is smaller than h2 so it reads
+   as a heading inside the section. */
+h3 {
+    color: #3B4A2A;
+    font-size: 20px;
+    margin: 0px 0px 8px 0px;
+}
+
+/* ----- Text and lists (element) ----- */
+
+/* The bottom margin is the gap between a paragraph and whatever comes after
+   it. */
+p {
+    margin: 0px 0px 16px 0px;
+}
+
+/* Indents the rules list and the visitor options so the numbers and bullets
+   sit inside the section. */
+ol,
+ul {
+    margin: 0px 0px 16px 32px;
+}
+
+/* Puts a small gap between list items so each rule stands on its own. */
+li {
+    margin: 0px 0px 8px 0px;
+}
+
+/* ----- Content sections (class) ----- */
+
+/* Styles every content box. The light background and olive border separate
+   each section from the page, the padding keeps the text off the border, and
+   the bottom margin stacks the sections with a gap between them. */
+.content-box {
+    background-color: #F2EFE4;
+    border: 2px solid #3B4A2A;
+    padding: 20px;
+    margin: 0px 0px 24px 0px;
+}
+
+/* Styles each supply card inside the kit section. The dashed border and
+   khaki background make each card look like a separate tag in the manual. */
+.card {
+    background-color: #E8E4D4;
+    border: 2px dashed #3B4A2A;
+    padding: 16px;
+    margin: 0px 0px 16px 0px;
+}
+
+/* ----- Images (class and element) ----- */
+
+/* Styles the figure wrapped around each image. The bottom margin leaves space
+   before the text that follows, and centering puts the image and its caption
+   in the middle of the section. */
+.photo {
+    margin: 0px 0px 16px 0px;
+    text-align: center;
+}
+
+/* Styles each image. max-width: 100% stops the image from growing wider than
+   its box, max-height keeps the tall image from taking over the section, and
+   width and height auto keep its original proportions. */
+img {
+    max-width: 100%;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    border: 2px solid #3B4A2A;
+}
+
+/* Styles the caption under each image. The smaller italic text reads as a
+   label for the picture, and the top padding keeps it off the image. */
+figcaption {
+    color: #3B4A2A;
+    font-size: 14px;
+    font-style: italic;
+    padding: 8px 0px 0px 0px;
+}
+
+/* ----- Footer (ID) ----- */
+
+/* Puts the footer on the same olive band as the header so the page is framed
+   top and bottom. */
+#site-footer {
+    background-color: #3B4A2A;
+    color: #F2EFE4;
+    padding: 16px;
+    text-align: center;
+}
+
+/* Makes the footer link gold so it stands out on the olive band. */
+#site-footer a {
+    color: #E0C36A;
+    font-weight: bold;
+}
